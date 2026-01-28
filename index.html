@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Email Sephora</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    .box {
+      max-width: 500px;
+    }
+    button {
+      background: #e60023;
+      color: white;
+      border: none;
+      padding: 18px 30px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1>Email Sephora Now</h1>
+    <p>
+      Click the button below to send a pre-written email to Sephora asking
+      them to review their partnership with Huda Beauty.
+    </p>
+
+    <button onclick="sendEmail()">SEND EMAIL</button>
+  </div>
+
+  <script>
+    function sendEmail() {
+      window.location.href =
+        "mailto:customerservice@sephora.com" +
+        "?cc=media@sephora.com,sephoracanada@sephora.com" +
+        "&subject=Request%20for%20Sephora%20to%20Review%20Partnership%20with%20Huda%20Beauty" +
+        "&body=Dear%20Sephora%20Corporate%20Team,%0D%0A%0D%0A" +
+        "We%20are%20writing%20to%20express%20serious%20concern%20regarding%20Sephora%E2%80%99s%20continued%20partnership%20with%20Huda%20Beauty.%0D%0A%0D%0A" +
+        "The%20Islamic%20Republic%20has%20brutally%20killed%20tens%20of%20thousands%20of%20Iranian%20protesters.%0D%0A%0D%0A" +
+        "We%20urge%20Sephora%20to%20review%20this%20partnership%20and%20stand%20on%20the%20side%20of%20human%20rights.%0D%0A%0D%0A" +
+        "Sincerely,%0D%0A[Your%20Name]";
+    }
+  </script>
+</body>
+</html>
+
+first upload
